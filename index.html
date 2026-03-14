@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -5,115 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>F-0310 Hub</title>
     <style>
-        :root {
-            --primary-color: #00c3ff;
-            --bg-color: #0a0a0c;
-            --card-bg: #16161a;
-            --text-color: #ffffff;
-        }
+        :root { --main-blue: #007AFF; --bg: #f2f2f7; }
+        body { font-family: -apple-system, system-ui, sans-serif; background: var(--bg); margin: 0; padding: 20px; color: #000; -webkit-tap-highlight-color: transparent; }
+        
+        .header { margin: 30px 0 20px 10px; }
+        .header h1 { font-size: 34px; font-weight: 800; margin: 0; letter-spacing: -1px; }
+        .header p { color: #8e8e93; text-transform: uppercase; font-size: 13px; font-weight: 600; margin: 0; }
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 40px 20px;
-            min-height: 100vh;
-        }
+        .app-card { background: #fff; border-radius: 20px; padding: 16px; display: flex; align-items: center; box-shadow: 0 1px 2px rgba(0,0,0,0.05); margin-bottom: 25px; }
+        
+        .app-icon { width: 72px; height: 72px; border-radius: 16px; overflow: hidden; margin-right: 15px; border: 0.5px solid #d1d1d6; flex-shrink: 0; }
+        .app-icon img { width: 100%; height: 100%; object-fit: cover; }
+        
+        .app-details { flex-grow: 1; }
+        .app-details h3 { margin: 0; font-size: 19px; font-weight: 700; letter-spacing: -0.5px; }
+        .app-details p { margin: 2px 0 8px 0; font-size: 12px; color: #8e8e93; font-weight: 400; }
 
-        /* Kodla çizilen modern logo */
-        .css-logo {
-            width: 100px;
-            height: 100px;
-            background: linear-gradient(135deg, #00c3ff, #0066ff);
-            border-radius: 25px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 50px;
-            font-weight: 900;
-            color: white;
-            box-shadow: 0 0 30px rgba(0, 195, 255, 0.5);
-            border: 2px solid rgba(255, 255, 255, 0.1);
-            margin-bottom: 20px;
-        }
+        .btn-get { display: inline-block; background: #f0f0f7; color: var(--main-blue); padding: 6px 22px; border-radius: 20px; text-decoration: none; font-weight: 800; font-size: 15px; transition: 0.2s; }
+        .btn-get:active { background: #d1d1d6; }
 
-        h1 {
-            font-size: 26px;
-            margin-bottom: 30px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            font-weight: 800;
-            color: #fff;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 400px;
-        }
-
-        .card {
-            background: var(--card-bg);
-            border-radius: 24px;
-            padding: 30px;
-            text-align: center;
-            border: 1px solid #2d2d33;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.4);
-        }
-
-        /* Burası senin istediğin başlık alanı */
-        .card h3 {
-            margin: 0 0 15px 0;
-            color: var(--primary-color);
-            font-size: 22px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-        }
-
-        .card p {
-            font-size: 15px;
-            color: #a0a0a5;
-            margin-bottom: 30px;
-            line-height: 1.6;
-        }
-
-        .btn {
-            display: inline-block;
-            width: 100%;
-            padding: 18px 0;
-            border-radius: 16px;
-            text-decoration: none;
-            font-weight: bold;
-            color: white;
-            background: linear-gradient(135deg, #00c3ff, #0066ff);
-            transition: all 0.3s ease;
-            box-sizing: border-box;
-            box-shadow: 0 8px 20px rgba(0, 195, 255, 0.3);
-            font-size: 16px;
-        }
-
-        .btn:active {
-            transform: scale(0.95);
-        }
+        .footer-card { background: #fff; border-radius: 20px; padding: 20px; border-radius: 20px; }
+        .btn-dns { display: block; background: var(--main-blue); color: #fff; text-align: center; padding: 14px; border-radius: 12px; text-decoration: none; font-weight: 600; margin-top: 15px; }
     </style>
 </head>
 <body>
 
-    <div class="css-logo">F</div>
+    <div class="header">
+        <p id="dateText"></p>
+        <h1>F-0310 Hub</h1>
+    </div>
 
-    <h1>F-0310 HUB</h1>
-
-    <div class="container">
-        <div class="card">
-            <h3>F-0310 ANTI-REVOKE</h3>
-            <p>Uygulamaların kapanmasını (Revoke) önlemek ve sertifika güvenliğini sağlamak için koruma profilini hemen yükleyin.</p>
-            <a href="F-0310Hub.mobileconfig" class="btn">KORUMAYI AKTİF ET</a>
+    <div class="app-card">
+        <div class="app-icon">
+            <img src="img/icon.jpg" alt="ESign">
+        </div>
+        <div class="app-details">
+            <h3>ESign Premium</h3>
+            <p>National Oilwell Varco, Inc.</p>
+            <a href="itms-services://?action=download-manifest&url=https://f0310.github.io/manifests/manifest.plist" class="btn-get">YÜKLE</a>
         </div>
     </div>
 
+    <div class="footer-card">
+        <h4 style="margin:0 0 10px 0; color:var(--main-blue); font-size:18px;">Sistem Koruması</h4>
+        <p style="font-size: 13px; color: #636366; line-height: 1.4; margin: 0;">Revoke (İptal) sorunlarını engellemek için DNS profilini mutlaka yükleyin.</p>
+        <a href="F-0310Hub.mobileconfig" class="btn-dns">DNS Kalkanını Yükle</a>
+    </div>
+
+    <script>
+        const d = new Date();
+        const options = { weekday: 'long', month: 'long', day: 'numeric' };
+        document.getElementById("dateText").innerHTML = d.toLocaleDateString('tr-TR', options);
+    </script>
+
 </body>
 </html>
-  
