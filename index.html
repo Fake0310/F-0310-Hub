@@ -21,9 +21,10 @@
             flex-direction: column;
             align-items: center;
             padding: 40px 20px;
+            min-height: 100vh;
         }
 
-        /* Senin Logonun Ayarı */
+        /* Logo Ayarları */
         .logo {
             width: 150px;
             height: 150px;
@@ -32,13 +33,15 @@
             box-shadow: 0 0 20px rgba(0, 195, 255, 0.4);
             object-fit: cover;
             margin-bottom: 20px;
+            background-color: #1a1a1d;
         }
 
         h1 {
             font-size: 24px;
             margin-bottom: 30px;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
             text-transform: uppercase;
+            font-weight: bold;
         }
 
         .container {
@@ -71,12 +74,12 @@
             display: inline-block;
             width: 100%;
             padding: 16px 0;
-            border-radius: 14px;
+            border-radius: 12px;
             text-decoration: none;
             font-weight: bold;
             color: white;
             background: linear-gradient(135deg, #00c3ff, #0066ff);
-            transition: transform 0.2s, box-shadow 0.2s;
+            transition: transform 0.2s;
             box-sizing: border-box;
             box-shadow: 0 4px 15px rgba(0, 195, 255, 0.3);
         }
@@ -88,7 +91,7 @@
 </head>
 <body>
 
-    <img src="IMG_0351.PNG" alt="F-0310 Logo" class="logo">
+    <img src="IMG_0351.png" alt="F-0310" class="logo" onerror="this.src='IMG_0351.PNG';">
 
     <h1>F-0310 HUB</h1>
 
@@ -96,8 +99,8 @@
         
         <div class="card">
             <h3>DNS KALKANI</h3>
-            <p>Sistemi korumaya almak ve engelleri kaldırmak için profili yükleyin.</p>
-            <a href="https://fake0310.github.io/F-0310-Hub/F-0310Hub.mobileconfig" class="btn">KALKANI YÜKLE</a>
+            <p>Sistemi korumaya almak ve iptalleri durdurmak için DNS profilini yükleyin.</p>
+            <a href="F-0310Hub.mobileconfig" class="btn">KALKANI YÜKLE</a>
         </div>
 
     </div>
