@@ -11,25 +11,19 @@
                     <key>kind</key>
                     <string>software-package</string>
                     <key>url</key>
-                    <string>https://fake0310.github.io/F-0310-Hub/esign.ipa</string>
-                </dict>
-                <dict>
-                    <key>kind</key>
-                    <string>display-image</string>
-                    <key>url</key>
-                    <string>https://fake0310.github.io/F-0310-Hub/icon.JPG</string>
+                    <string>https://fake0310.github.io/F-0310-Hub/signed_JSN1L60ThOSr.ipa</string>
                 </dict>
             </array>
             <key>metadata</key>
             <dict>
                 <key>bundle-identifier</key>
-                <string>com.national.oilwell.esign</string>
+                <string>xyz.appinstall.nov.carbon.lam</string>
                 <key>bundle-version</key>
-                <string>5.0.2</string>
+                <string>1.0</string>
                 <key>kind</key>
                 <string>software</string>
                 <key>title</key>
-                <string>ESign Premium</string>
+                <string>ESign F-0310</string>
             </dict>
         </dict>
     </array>
