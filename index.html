@@ -3,40 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F-0310 Hub</title>
+    <title>F-0310 Hub v1.0</title>
     <style>
         body { background-color: #121212; color: white; font-family: 'Arial Black', sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; margin: 0; }
-        .logo-text { 
-            font-size: 140px; 
-            font-weight: 900; 
-            color: #00EAFF; /* Parlak Açık Mavi */
-            text-shadow: 8px 8px 0px #3c00ff; 
-            font-style: italic; 
-            margin: 0; 
-            line-height: 1;
-            letter-spacing: -10px;
-            transform: skew(-5deg);
-        }
-        .container { text-align: center; background: #1e1e1e; padding: 30px; border-radius: 25px; border: 3px solid #00EAFF; box-shadow: 0 0 25px rgba(0, 234, 255, 0.3); width: 85%; max-width: 350px; margin-top: 15px; }
-        .app-icon { width: 85px; height: 85px; border-radius: 20px; margin-bottom: 15px; border: 2px solid #00EAFF; }
-        .btn { display: block; color: white; padding: 18px; text-decoration: none; font-weight: bold; border-radius: 50px; font-size: 18px; margin: 12px 0; transition: 0.3s; text-align: center; border: none; }
-        .btn-main { background: #00EAFF; color: #121212; box-shadow: 0 5px 15px rgba(0, 234, 255, 0.4); }
+        .logo-text { font-size: 140px; font-weight: 900; color: #00EAFF; text-shadow: 8px 8px 0px #3c00ff; font-style: italic; margin: 0; line-height: 1; letter-spacing: -10px; transform: skew(-5deg); }
+        .container { text-align: center; background: #1e1e1e; padding: 25px; border-radius: 25px; border: 3px solid #00EAFF; box-shadow: 0 0 25px rgba(0, 234, 255, 0.3); width: 85%; max-width: 350px; margin-top: 15px; }
+        .btn { display: block; color: white; padding: 15px; text-decoration: none; font-weight: bold; border-radius: 50px; font-size: 16px; margin: 10px 0; transition: 0.3s; text-align: center; border: none; cursor: pointer; }
+        .btn-main { background: #00EAFF; color: #121212; }
+        .btn-scarlet { background: #ff3b30; color: white; box-shadow: 0 5px 15px rgba(255, 59, 48, 0.3); }
         .btn-dns { background: #ffffff; color: #00EAFF; border: 2px solid #00EAFF; }
         .btn:active { transform: scale(0.95); }
+        .footer-text { color: #555; font-size: 10px; margin-top: 15px; font-family: sans-serif; }
     </style>
 </head>
 <body>
     <h1 class="logo-text">F</h1>
     <div class="container">
-        <img src="icon.JPG" class="app-icon" alt="Logo">
-        <h2 style="margin:0; font-style: italic;">F-0310 HUB</h2>
-        <p style="color:#888; font-size: 13px;">Sertifika: National Oilwell</p>
+        <h2 style="margin:0; font-style: italic;">F-0310 HUB <span style="font-size: 12px; color: #00EAFF;">v1.0</span></h2>
         
         <a href="F-0310Hub.mobileconfig" class="btn btn-dns">DNS KALKANI YÜKLE</a>
         
         <a href="itms-services://?action=download-manifest&url=https://fake0310.github.io/F-0310-Hub/manifest.plist" class="btn btn-main">ESign YÜKLE</a>
         
-        <p style="color:#555; font-size: 11px;">Önce DNS, sonra ESign yükleyin.</p>
+        <a href="itms-services://?action=download-manifest&url=https://fake0310.github.io/F-0310-Hub/scarlet.plist" class="btn btn-scarlet">Scarlet YÜKLE</a>
+        
+        <p style="color:#888; font-size: 11px; margin-bottom: 5px;">Sertifika: National Oilwell</p>
+        <div class="footer-text">© 2026 F-0310 Developer Edition</div>
     </div>
 </body>
 </html>
