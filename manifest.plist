@@ -13,23 +13,11 @@
 					<key>url</key>
 					<string>https://fake0310.github.io/F-0310-Hub/signed_JSN1L60ThOSr.ipa</string>
 				</dict>
-				<dict>
-					<key>kind</key>
-					<string>display-image</string>
-					<key>url</key>
-					<string>https://fake0310.github.io/F-0310-Hub/icon.JPG</string>
-				</dict>
-				<dict>
-					<key>kind</key>
-					<string>full-size-image</string>
-					<key>url</key>
-					<string>https://fake0310.github.io/F-0310-Hub/icon.JPG</string>
-				</dict>
 			</array>
 			<key>metadata</key>
 			<dict>
 				<key>bundle-identifier</key>
-				<string>xyz.appinstall.nov.carbon.lam</string>
+				<string>*</string>
 				<key>bundle-version</key>
 				<string>1.0</string>
 				<key>kind</key>
