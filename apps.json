@@ -1,0 +1,20 @@
+{
+  "name": "F-0310 Hub",
+  "identifier": "com.f0310.hub",
+  "subtitle": "Sertifikasız Uygulama Merkezi",
+  "description": "F-0310 Hub ile PC kullanmadan, tamamen kendi Apple ID'niz üzerinden sertifikasız yükleme yapın.",
+  "iconURL": "https://fake0310.github.io/F-0310-Hub/F-0310HubLogo.jpg",
+  "apps": [
+    {
+      "name": "ESign No Logs",
+      "bundleIdentifier": "p3.xyz.yyyue.esign",
+      "developerName": "yyyue",
+      "version": "5.0.2",
+      "versionDate": "2026-07-11",
+      "downloadURL": "https://fake0310.github.io/F-0310-Hub/ESign-V5.0.2-No-Logs.ipa",
+      "localizedDescription": "Gelişmiş IPA imzalama ve dosya yönetim aracı. Log kayıtları temizlenmiş özel sürüm.",
+      "iconURL": "https://fake0310.github.io/F-0310-Hub/EsignLogo.jpg",
+      "size": 14149000
+    }
+  ]
+}
