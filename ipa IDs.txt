@@ -1,2 +1,2 @@
-com.f-0310.esign
+com.f0310.esign.client
 EsignNoLogs
