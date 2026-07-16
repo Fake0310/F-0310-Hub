@@ -1,2 +1,0 @@
-com.f0310.esign.client
-EsignNoLogs
