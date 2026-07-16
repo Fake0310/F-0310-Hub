@@ -2,211 +2,51 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>F-0310 Hub</title>
-    
-    <!-- Apple Web App Ayarları: Dükkanı Ana Ekranda Tam Ekran Yapar -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="F-0310 Hub">
-    <link rel="apple-touch-icon" href="F-0310HubLogo.jpg">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F-0310 Hub v1.0</title>
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #0b0b0c;
-            color: #ffffff;
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .header {
-            text-align: center;
-            margin-top: 20px;
-            margin-bottom: 30px;
-        }
-
-        .header img {
-            width: 90px;
-            height: 90px;
-            border-radius: 22px;
-            box-shadow: 0 4px 15px rgba(0, 255, 200, 0.2);
-            border: 2px solid #00ffc8;
-        }
-
-        .header h1 {
-            font-size: 24px;
-            margin: 10px 0 5px 0;
-            letter-spacing: 1px;
-            color: #00ffc8;
-        }
-
-        .header p {
-            font-size: 14px;
-            color: #8e8e93;
-            margin: 0;
-        }
-
-        /* Kurulum Bilgi Paneli */
-        .info-card {
-            background: linear-gradient(135deg, #1c1c1e 0%, #121214 100%);
-            border: 1px solid #2c2c2e;
-            border-radius: 16px;
-            padding: 20px;
-            width: 90%;
-            max-width: 400px;
-            margin-bottom: 25px;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.5);
-        }
-
-        .info-card h2 {
-            font-size: 18px;
-            color: #ffcc00;
-            margin-top: 0;
-            margin-bottom: 10px;
-            text-align: center;
-        }
-
-        .info-card ul {
-            padding-left: 20px;
-            margin: 0;
-            font-size: 13px;
-            color: #d1d1d6;
-            line-height: 1.6;
-        }
-
-        /* Uygulama Listesi Alanı */
-        .app-list {
-            width: 90%;
-            max-width: 400px;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .app-card {
-            background-color: #1c1c1e;
-            border: 1px solid #2c2c2e;
-            border-radius: 16px;
-            padding: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-        }
-
-        .app-details {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .app-icon {
-            width: 60px;
-            height: 60px;
-            border-radius: 14px;
-            object-fit: cover;
-        }
-
-        .app-info {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .app-name {
-            font-size: 16px;
-            font-weight: 600;
-            color: #ffffff;
-        }
-
-        .app-ver {
-            font-size: 12px;
-            color: #8e8e93;
-            margin-top: 2px;
-        }
-
-        .app-status {
-            font-size: 11px;
-            color: #34c759;
-            font-weight: bold;
-            margin-top: 4px;
-        }
-
-        /* SideStore URL Scheme Tetikleyici Buton */
-        .btn-install {
-            background-color: #00ffc8;
-            color: #000000;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 13px;
-            padding: 10px 16px;
-            border-radius: 20px;
-            transition: transform 0.2s, background-color 0.2s;
-            text-transform: uppercase;
-        }
-
-        .btn-install:active {
-            transform: scale(0.95);
-            background-color: #00b38c;
-        }
-
-        .footer {
-            margin-top: 40px;
-            font-size: 11px;
-            color: #48484a;
-            text-align: center;
-        }
+        body { background-color: #121212; color: white; font-family: 'Arial Black', sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; margin: 0; }
+        .logo-text { font-size: 140px; font-weight: 900; color: #00EAFF; text-shadow: 8px 8px 0px #3c00ff; font-style: italic; margin: 0; line-height: 1; letter-spacing: -10px; transform: skew(-5deg); }
+        .container { text-align: center; background: #1e1e1e; padding: 25px; border-radius: 25px; border: 3px solid #00EAFF; box-shadow: 0 0 25px rgba(0, 234, 255, 0.3); width: 85%; max-width: 350px; margin-top: 15px; }
+        
+        .app-row { display: flex; align-items: center; background: #252525; margin: 10px 0; padding: 10px; border-radius: 15px; text-decoration: none; color: white; transition: 0.3s; border: 1px solid transparent; }
+        .app-row:active { transform: scale(0.98); background: #333; }
+        .app-row img { width: 50px; height: 50px; border-radius: 12px; margin-right: 15px; border: 1px solid #444; object-fit: cover; }
+        .app-info { text-align: left; flex-grow: 1; }
+        .app-info span { display: block; font-size: 16px; font-weight: bold; }
+        .app-info small { color: #888; font-size: 11px; font-family: sans-serif; }
+        
+        .btn-dns { display: block; background: #ffffff; color: #00EAFF; padding: 15px; text-decoration: none; font-weight: bold; border-radius: 50px; font-size: 16px; margin: 10px 0; text-align: center; border: 2px solid #00EAFF; }
+        .footer-text { color: #555; font-size: 10px; margin-top: 15px; font-family: sans-serif; }
     </style>
 </head>
 <body>
+    <center>
+    <img src="F-0310HubLogo.jpg" style="width: 140px; height: 140px; border-radius: 25%; margin-top: 20px; margin-bottom: 10px; box-shadow: 0 0 25px rgba(0, 234, 255, 0.6); border: 2px solid rgba(0, 234, 255, 0.3);">
+</center>
+    <div class="container">
+        <h2 style="margin:0; font-style: italic;">F-0310 HUB <span style="font-size: 12px; color: #00EAFF;">v1.0</span></h2>
+        
+        <a href="F-0310Hub.mobileconfig" class="btn-dns">DNS KALKANI YÜKLE</a>
+        
+        <hr style="border: 0; border-top: 1px solid #333; margin: 15px 0;">
 
-    <!-- ÜST LOGO VE BAŞLIK -->
-    <div class="header">
-        <img src="F-0310HubLogo.jpg" alt="F-0310 Hub Logo">
-        <h1>F-0310 HUB</h1>
-        <p>GitHub Powered Sideload Sunucusu</p>
-    </div>
-
-    <!-- SİSTEM BİLGİLENDİRME KARTIZ -->
-    <div class="info-card">
-        <h2>🔒 Sertifikasız Altyapı Mantığı</h2>
-        <ul>
-            <li>İndirmeler kurumsal sertifikaya ihtiyaç duymaz.</li>
-            <li>Uygulamalar cihazınızda yerel olarak imza edilir.</li>
-            <li>Yükleme butonları doğrudan yerel motoru tetikler.</li>
-            <li>Profil yüklüyse PC kullanmanıza gerek kalmaz.</li>
-        </ul>
-    </div>
-
-    <!-- UYGULAMA LİSTESİ -->
-    <div class="app-list">
-
-        <!-- ESign Kartı -->
-        <div class="app-card">
-            <div class="app-details">
-                <img src="EsignLogo.jpg" class="app-icon" alt="ESign Icon">
-                <div class="app-info">
-                    <span class="app-name">ESign (No Logs)</span>
-                    <span class="app-ver">Versiyon: 5.0.2</span>
-                    <span class="app-status">● HAZIR / SERTİFİKASIZ</span>
-                </div>
+        <a href="itms-services://?action=download-manifest&url=https://fake0310.github.io/F-0310-Hub/esign.plist" class="app-row">
+            <img src="EsignLogo.JPG" alt="ESign"> <div class="app-info">
+                <span>F-0310 ESign</span>
+                <small>Versiyon: 5.0.2</small>
             </div>
-            <!-- GitHub'daki ham IPA'yı SideStore şemasıyla tetikleyen canavar buton -->
-            <a href="sidestore://install?url=https://fake0310.github.io/F-0310-Hub/ESign-V5.0.2-No-Logs.ipa" class="btn-install">
-    Yükle
-            </a>
-        </div>
+        </a>
 
+        <a href="itms-services://?action=download-manifest&url=https://fake0310.github.io/F-0310-Hub/ksign.plist" class="app-row">
+            <img src="KsignLogo.jpg" alt="KSign"> <div class="app-info">		
+        <span>F-0310 KSign</span>
+        <small>Versiyon: 1.2 (Stabil)</small>
     </div>
+</a>
 
-    <!-- DÜKKAN ALTI BİLGİ -->
-    <div class="footer">
-        <p>© 2026 F-0310 Hub. Tüm Hakları Saklıdır.</p>
-        <p>Kendi Apple ID'niz üzerinden imzalama gerçekleştirir.</p>
+        <p style="color:#00EAFF; font-size: 11px; margin-top: 15px;">Sistem Durumu: Aktif 🛡️</p>
+        <div class="footer-text">© 2026 F-0310 Developer Edition .All Rights Reserved.</div>
     </div>
-
 </body>
 </html>
